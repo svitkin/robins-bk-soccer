@@ -6,3 +6,7 @@ theme = 'not-much'
 [params]
 theme = "light"
 palette = "default"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
