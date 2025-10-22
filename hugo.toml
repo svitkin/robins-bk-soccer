@@ -1,0 +1,8 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'Robins Dry Dock F.C.'
+theme = 'not-much'
+
+[params]
+theme = "light"
+palette = "default"
