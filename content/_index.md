@@ -2,7 +2,7 @@
 lead: "Soccer in Red Hook after the Great War"
 ---
 
-By the end of the 1920/21 season, Robins Dry Dock F.C. had spent an embittered fourteen and a half hours sharing the field with their rivals Erie A.A. - from nearby soccer hotbed Kearny, NJ. Four of those games comprised a round of the American Cup, and according to newspapers of that era, was the longest soccer cup round played in the history of the United States. Two of those games were in the more prestigious National Challenge Cup (now known as the U.S. Open Cup). They prevailed in both on their way to a domestic cup double, the first team from Brooklyn to accomplish this feat - a marker of success recognized across the diverse, often embattled, world of early soccer in the United States. 
+By the end of the 1920/21 season, Robins Dry Dock F.C. had spent an embittered fourteen hours sharing the field with their rivals Erie A.A. - from nearby soccer hotbed Kearny, NJ. Four of those games comprised a round of the American Cup, and according to newspapers of that era, was the longest soccer cup round played in the history of the United States. Two of those games were in the more prestigious National Challenge Cup (now known as the U.S. Open Cup). They prevailed in both on their way to a domestic cup double, the first team from Brooklyn to accomplish this feat - a marker of dominance recognized across the diverse, often embattled, world of early soccer in the United States. 
 
 A season later they ceased to exist.
 
@@ -26,4 +26,15 @@ John, along with countless other immigrants, would bring their love of soccer wi
 
 Scottish-Americans had been coming over in droves to the northeast and they did not just bring their affinity for the game, but also their style. Soccer, having formed as the brother of rugby from an older ball-playing sport, did not have passing embedded into it from the outset. In the mid 1800's, it would not be uncommon for a player to just dribble the ball, with little to no regard to their teammates, and then shoot. Then the other team would do the same. It took a revolution in style in Scotland, in particular from Queen's Park in Glasgow, to bring passing combinations to the fore and change how the game was played. That short passing style quickly became the obvious path forward, and in the U.S., became the style most associated with how "hyphenated-Americans" played the sport.
 
+In the first part of the twentieth century many of these "hyphenated-Americans" settled in what would become early hotbeds of soccer activity of the Northeast. The textile mill hubs of Fall River, MA and Kearny, NJ attracted new workers. New York City, of course, had always been a center for immigration. 
 
+When Robins Dry Dock FC formed in 1918, the world of NYC soccer was already full of teams representing the country or ethnic homeland they had emigrated from. For years before then, the New York Footballers' Protective Association (an organization that helped provide funds for injured players) held a popular fundraising tournament where players would join teams of their nationality (like Sweden, Scotland, England) and play against each other. In the local leagues, team names like Hungarian FC were not uncommon. 
+
+In an early round of the National Challenge Cup in 1918, Robins played the New York Students' Chinese Soccer Club, billed as the first Chinese soccer team in the U.S. Founded by Kwang Lim Kwong, a student at Columbia University, the team was good enough to compete in the major competitions of the day, although they lost to Robins Dry Dock 6 - 0, and mentions of them in the 1920s faded.
+
+The Robins themselves would be frequently referred to as a team of immigrants, with most of their players being of English or Scottish descent. Their manager was no different - John R. Drysdale.
+
+
+# Works Teams
+
+Until later in the 20th century, most soccer players did not solely make their living just playing soccer.
