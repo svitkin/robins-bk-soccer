@@ -36,6 +36,5 @@ In an early round of the National Challenge Cup in 1918, Robins played the New Y
 The Robins themselves would be frequently referred to as a team of immigrants, with most of their players being of English or Scottish descent. Their manager was no different - John R. Drysdale.
 
 
-# Works Teams
+# The War Work Teams
 
-Until later in the 20th century, most soccer players did not solely make their living just playing soccer.
