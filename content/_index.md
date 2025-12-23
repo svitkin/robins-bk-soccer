@@ -1,6 +1,8 @@
 ---
 lead: "Soccer in Red Hook after the Great War"
+toc: true
 ---
+
 
 By the end of the 1920/21 season, Robins Dry Dock F.C. had spent an embittered fourteen hours sharing the field with their rivals Erie A.A. - from nearby soccer hotbed Kearny, NJ. Four of those games comprised a round of the American Cup, and according to newspapers of that era, was the longest soccer cup round played in the history of the United States. Two of those games were in the more prestigious National Challenge Cup (now known as the U.S. Open Cup). They prevailed in both on their way to a domestic cup double, the first team from Brooklyn to accomplish this feat - a marker of dominance recognized across the diverse, often embattled, world of early soccer in the United States. 
 
@@ -53,7 +55,7 @@ It was into this environment Todd Shipyards would expand its sporting enterprise
 
 As a "works" team, all of the Robins players were also employees. This was a sporting era when proffesionalization was scarce. It was expected for even a successful athlete to have another job. It did not go unnoticed by players and other clubs that shipyard teams were flush with money. Soon they were being accused of luring players with "soft" jobs and high wages - there were rumors that players were given $21 (around $450 in 2026 USD) a day to do little but play soccer. This type of poaching was common enough that the U.S.F.A led an official inquiry into the transfer of players to Robins Dry Dock. This was only in their first season.
 
-Robins attracting the best players around continued well beyond the first season though. Soon they would amass a talented team that took the U.S. soccer world by storm.
+Robins attracting the best players continued well beyond the first season though. Soon they would amass a talented team that took the U.S. soccer world by storm.
 
 # Early Signs of Success
 
@@ -63,13 +65,31 @@ The team also participated in the larger competitions of the day - The National 
 
 In the quarter-final of the Southern NY State Cup, they lost to their industry rivals Morse Dry Dock. After the first game was stopped early because of rain and darkness, the Robins lost in the third round of the National Challenge Cup to Paterson F.C. (eventual finalists). They finished a middling fourth out of six in the NAFL. It was in the American Cup where they progressed the furthest, making it all the way to the semi-final against juggernauts Bethlehem Steel - arguably the most famous team of their day. They lost a fiercely contested battle 3-2, despite being up 1-0 at half-time. Bethlehem would win the double that season, coming out top against Paterson F.C. in both the American Cup final and National Challenge Cup competitions. However, they did not come out of their game with Robins unscathed. Many of their best players would join the shipbuilding team in the next season.
 
-# First Trophy
+# New Signings and First Trophies
 
+Harry Ratican, one of the most famous players of his era (and a future U.S. soccer hall-of-famer and former Bethlehem Steel player), signed for Robins Dry Dock in November 1919. He was joined by Bobby Millar (also a hall-of-famer and former Beth) and Neil Clarke - two Scottish born players referred to by some as the "Siamese Twins" of U.S. soccer, because of how frequently they played together on the same team. Indeed, they had won the first ever National Challenge Cup together with Brooklyn Field Cup six years earlier. The Robins bolstered their goalkeeping position with the signing of a young Pete Renzulli, also a future hall-of-famer. Clearly, they were a different team for the 1919-20 season.
+
+In the very first round of the National Challenge Cup, they defeated Morse Dry Dock, with Ratican netting two goals. In the next round, they faced another shipyard team - the Federal Shipyards of New Jersey. The game was stopped with two minutes to play after a free-for-all fight erupted between the players. Violent interruptions were not uncommon in U.S. soccer but this one was extreme. One of the Federal players, their David Muir, ended up hitting the referee. He was suspended indefinitely from all soccer playing and the game's score at the time stood, with the Robins winning 3-2. Their next game in the cup would be between their fellow Todd Shipyard compatriots, Tebo Yacht Basin, which they would win 3-1. The Fall River Rovers, who were unable to put together a team because of the Great War last season, were their next opponents. The Rovers were a successful New England team but were downed 4-0 before a record crowd at Todd Field. 
+
+The next game, the Robins well and truly arrived as contenders, beating the famous Bethlehem Steel team, who knocked them out last year, with some of their best players now playing for the Robins. In the semi-final, they would eventually lose to Quincy, MA based Fore River Rovers.
+
+Once again, it was the American Cup where the Dockers found success. Cruising through the first three rounds, Robins initially lost to Morse Dry Dock, their consistent industrial rivals, in the fourth round. However, Morse had fielded an ilegible player, and in the forced replay of the game, the Robins triumphed 2-1. In April 1920, the Robins played the Fore River Rovers again, who had beaten them earlier in the National Challenge Cup. This time, the Robins beat their Quincy rivals 2-0, buying their ticket to the final against another repeat challenger - Bethlehem Steel. In front of a crowd of 7,000 people, the Robins cemented their superiority and beat Bethlehem again 1-0, securing their first major tropy in the process. Renzulli put in a masterclass, saving all of the opposition shots, and helping his team keep a clean sheet.
+
+The intra-company rivalry between Robins and Tebo would continue later in the season. Yet again defeating Morse Dry Dock in the semi-final, the Robins faced-off against Tebo Yacht Basin in the final of the Southern NY State Cup Final. After a scoreless first half, the Robins triumphed again, winning the local cup 3 to 1.
+
+In between all these cup runs, the team took a tour of St. Louis, playing exhibition games against many of its best teams. Harry Ratican, their star striker was originally from the city. 
+
+St. Louis had its own strong culture of soccer, the game having been brought over by Irish immigrants in the 19th century. It continued to be propogated by the Catholic Church and its associated institutions, who were interested in promoting physical activity in youth. Relatively isolated from the rest of the U.S. soccer playing world, the city would continuously try to "Americanize" the game with their own rules - like 30 minute halfs and substitutions (in an era when FIFA outlawed them). They would also be the source of many natural born American players and a style of physical, fast play that contrasted with the short passing game that dominated the east coast. 
+
+Although all friendly matches, this first foray against St. Louis teams would foreshadow Robins' rivalry with Scullin Steel, the famous works team from the city, and the rising tension between "Americanizing" the game and the immigrants who loved and popularized the sport.
 
 
 # The Double Winning Season
 
-# From Robins to Todd
+
+
+# From Robins & Tebo to Todd, and the Rise of Proffesionalism
+
 
 # "American" Soccer
 
