@@ -39,25 +39,39 @@ Their time together would be bookended by Theodore Roosevelt's Hyphenated-Americ
 
 # A War Work Team
 
-In 1918, the Great War was coming to a close. The U.S.'s involvement had caused many thousands of sportsmen to be drafted or enlist. With sports obviously not the highest priority, even extremely popular games like baseball had to end their season prematurely. Soccer was no different, with entire teams unable to participate in league and cup competitions after losing so many players. 
+In 1918, the Great War was coming to a close. The U.S.'s involvement had caused many thousands of sportsmen to be drafted or enlist. With sports obviously not the highest priority, even extremely popular games like baseball had to end their season prematurely. Soccer was no different, with entire teams unable to participate in league and cup competitions after losing so many players. Even successful teams like the Fall River Rovers did not enter into any national competitions in the 1918-19 season.
 
 However, with the end of WWI in sight, a certain class of companies benefitted from wartime government investment. Todd Shipyards was chief amongst these, producing many ships for the U.S. navy during its sea campaign against Germany. By 1918, the company had enough money and will to expand its sporting enterprises. William H. Todd, its chief executive, ran a company that was consistently engaged in its community. From a primary location in Erie Basin and Red Hook, he helped multiple sporting and community events flourish. The company sponsored events like ship launchings, dances, and Red Cross drives where employee musical groups would play for the occasion. Baseball, basketball, track and swim meets were all also sponsored by Todd Shipyards, with many of these sports having "work" teams representing a branch of the company - Robins Dry Dock and Repair Company (Erie Basin), Tebo Yacht Basin (at 3rd ave and 23rd street in Brooklyn), and Tietjen & Lang (Hoboken, NJ) all had teams that participated in these sporting endeavors. Frequently, these teams would play in a "Shipyards League" with other companies in the industry, like Morse Dry Dock.
 
-1918 was a more egalitarian sporting landscape than our current one. College Football was the clear front-runner, but outside of that, in an era before TV, many sports were popular. It was not uncommon to see large crowds gathered at track meets, swim meets, bowling, and boxing matches. Soccer was a big part of this sporting landscape. At the time, it was primarily composed of regional associations like the Southern New York State Footballing Association which held their own league championships and cups, and two major national cup competitions - the American Cup and the National Challenge Cup (now the U.S. Open Cup). Baseball was going through a spurt of popularity (primarily caused by Babe Ruth's rise) and was seen as the major summer sport. Due to other sports' popularity and despite the frequent delays and poor playing conditions this would cause, soccer would vye to be the national winter sport.
+1918 was a more egalitarian sporting landscape than our current one. College Football was the clear front-runner, but outside of that, in an era before TV, many sports were popular. It was not uncommon to see large crowds gathered at track meets, swim meets, bowling, and boxing matches. Soccer was a big part of this sporting landscape. At the time, it was primarily composed of regional associations like the Southern New York State Footballing Association which held their own league championships and cups, and two major national cup competitions - the American Cup and the National Challenge Cup (now the U.S. Open Cup). Baseball was going through a spurt of popularity (primarily caused by Babe Ruth's rise) and was seen as the major summer sport. 
+
+Due to other sports' popularity and despite the frequent delays and poor playing conditions this would cause, soccer would vye to be the national winter sport. The main national cup competitions were run by two different governing bodies - the A.F.A (American Football Association) ran the American Cup and the U.S.F.A. (United States Football Association, recognized by FIFA) ran the National Challenge Cup - a reflection of the consistently fractured state of the sports' governance in the early 20th century. Besides the governing difficulties and the challenge of playing an outdoor sport in the winter, U.S. soccer also struggled with fan and player violence and poor refereeing quality. 
+
+With all this, the sport was still clearly growing in popularity and attracting large crowds.
 
 It was into this environment Todd Shipyards would expand its sporting enterprise, creating soccer teams for each of its three major locations on the East coast. Robins Dry Dock F.C. was at the center of this new operation and the most well funded. Right before their first season, in the summer of 1918, Todd Field was built at the corners of Columbia, Lorraine, Bush, and Ostego streets to host outdoor sporting events, including new soccer games.
 
-As a "works" team, all of the Robins players were also employees. This was a sporting era when proffesionalization was scarce. It was expected for even a successful athlete to have another job. It did not go unnoticed by players and other clubs that shipyard teams were flush with money. Soon they were being accused of luring players with "soft" jobs and high wages - players were given $21 (around $450 in 2026 USD) a day to do little but play soccer. This type of poaching was common enough that the U.S.F.A (the national soccer governing body) led an official inquiry into the movement of players to Robins Dry Dock. This was only in their first season.
+As a "works" team, all of the Robins players were also employees. This was a sporting era when proffesionalization was scarce. It was expected for even a successful athlete to have another job. It did not go unnoticed by players and other clubs that shipyard teams were flush with money. Soon they were being accused of luring players with "soft" jobs and high wages - there were rumors that players were given $21 (around $450 in 2026 USD) a day to do little but play soccer. This type of poaching was common enough that the U.S.F.A led an official inquiry into the transfer of players to Robins Dry Dock. This was only in their first season.
 
-Robins would not be confined to luring the best players around in their first year. Soon they would amass a talented team that took the soccer world by storm.
+Robins attracting the best players around continued well beyond the first season though. Soon they would amass a talented team that took the U.S. soccer world by storm.
 
-# Early Success
+# Early Signs of Success
+
+The earliest Robins game dates back to October of 1918. A Shipbuilding Soccer League was formed with the same industry teams who played baseball against each other that summer. Their first game, and victory, seemed to have been against Morse Dry Dock, a rival in baseball as well. 
+
+The team also participated in the larger competitions of the day - The National Association Football League (NAFL, the highest level league for teams located in the Mid-Atlantic), the Southern New York State Association Leage and Cup, the A.F.A. American Cup, and the most prestigious National Challenge Cup. The war still loomed large over this early part of the season and the Southern New York State Football Association also arranged a cup competition to aid the United War Work Campaign, a massive one-week fundraising effort for the U.S. military. The Robins did not win any of these, but they progressed far enough to show promise.
+
+In the quarter-final of the Southern NY State Cup, they lost to their industry rivals Morse Dry Dock. After the first game was stopped early because of rain and darkness, the Robins lost in the third round of the National Challenge Cup to Paterson F.C. (eventual finalists). They finished a middling fourth out of six in the NAFL. It was in the American Cup where they progressed the furthest, making it all the way to the semi-final against juggernauts Bethlehem Steel - arguably the most famous team of their day. They lost a fiercely contested battle 3-2, despite being up 1-0 at half-time. Bethlehem would win the double that season, coming out top against Paterson F.C. in both the American Cup final and National Challenge Cup competitions. However, they did not come out of their game with Robins unscathed. Many of their best players would join the shipbuilding team in the next season.
+
+# First Trophy
 
 
 
 # The Double Winning Season
 
 # From Robins to Todd
+
+# "American" Soccer
 
 # The End
 
