@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Early US Soccer Teams Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Leaflet MarkerCluster CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+        .team-popup {
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        .team-popup h3 {
+            margin: 0 0 8px 0;
+            color: #1a5490;
+        }
+        .team-popup p {
+            margin: 4px 0;
+        }
+        .team-popup strong {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <!-- Leaflet MarkerCluster JS -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+    
+    <script>
+        // Initialize map centered on USA
+        const map = L.map('map').setView([40, -95], 4);
+        
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // Teams data with coordinates
+        const teams = [
+            { name: 'Abbot Worsted', city: 'Forge Village (Westford)', state: 'Massachusetts', heritage: 'Textile workers (carpet yarn manufacturing)', lat: 42.5795, lng: -71.4378 },
+            { name: 'Ansonia FC', city: 'Ansonia', state: 'Connecticut', heritage: 'Industrial town team', lat: 41.3409, lng: -73.0790 },
+            { name: 'Arlington Mills', city: 'Broadway, Lawrence and Methuen', state: 'Massachusetts', heritage: 'Textile mill workers', lat: 42.7070, lng: -71.1631 },
+            { name: 'Ashton & Berkeley', city: 'Cumberland', state: 'Rhode Island', heritage: 'Manufacturing workers', lat: 41.9001, lng: -71.3906 },
+            { name: 'Athenia Steel', city: 'Clifton', state: 'New Jersey', heritage: 'Steel workers', lat: 40.8584, lng: -74.1638 },
+            { name: 'Babcock & Wilcox', city: 'Bayonne', state: 'New Jersey', heritage: 'Boiler manufacturing workers', lat: 40.6687, lng: -74.1143 },
+            { name: 'Ben Millers FC', city: 'St. Louis', state: 'Missouri', heritage: 'Sponsored by Ben W. Miller Hat Company', lat: 38.6270, lng: -90.1994 },
+            { name: 'Bethlehem Steel FC', city: 'Bethlehem', state: 'Pennsylvania', heritage: 'Steel workers', lat: 40.6259, lng: -75.3705 },
+            { name: 'Boston City FC', city: 'Boston', state: 'Massachusetts', heritage: 'Geographic team', lat: 42.3601, lng: -71.0589 },
+            { name: 'Bricklayers FC', city: 'Chicago', state: 'Illinois', heritage: 'Trade union workers (bricklayers)', lat: 41.8781, lng: -87.6298 },
+            { name: 'Brooklyn FC', city: 'Brooklyn', state: 'New York', heritage: 'Geographic team', lat: 40.6782, lng: -73.9442 },
+            { name: 'Bunker Hill FC', city: 'Paterson', state: 'New Jersey', heritage: 'Unknown', lat: 40.9168, lng: -74.1718 },
+            { name: 'Caledonian FC', city: 'Detroit', state: 'Michigan', heritage: 'Scottish heritage', lat: 42.3314, lng: -83.0458 },
+            { name: 'Camera Works FC', city: 'Rochester', state: 'New York', heritage: 'Kodak-related camera manufacturing', lat: 43.1566, lng: -77.6088 },
+            { name: 'Cedar Cliff FC', city: 'Haledon', state: 'New Jersey', heritage: 'Unknown', lat: 40.9357, lng: -74.1863 },
+            { name: 'Chicopee Rovers', city: 'Chicopee', state: 'Massachusetts', heritage: 'Industrial workers', lat: 42.1487, lng: -72.6079 },
+            { name: 'Clan Cameron', city: 'Rhode Island', state: 'Rhode Island', heritage: 'Scottish heritage (Cameron clan)', lat: 41.6800, lng: -71.5118 },
+            { name: 'Clan MacDuff', city: 'New York City', state: 'New York', heritage: 'Scottish heritage (MacDuff clan)', lat: 40.7128, lng: -74.0060 },
+            { name: 'Colonial FC', city: 'Rhode Island', state: 'Rhode Island', heritage: 'Unknown', lat: 41.6800, lng: -71.5118 },
+            { name: 'Columbia Graphophone', city: 'Bridgeport', state: 'Connecticut', heritage: 'Phonograph/record manufacturing workers', lat: 41.1865, lng: -73.1952 },
+            { name: 'Disston AA', city: 'Tacony (Philadelphia)', state: 'Pennsylvania', heritage: 'Saw manufacturing workers (Disston Saw Works)', lat: 40.0115, lng: -75.0400 },
+            { name: 'Dunlevy S.C.', city: 'Dunlevy', state: 'Pennsylvania', heritage: 'Unknown', lat: 40.1173, lng: -79.8570 },
+            { name: 'Erie AA', city: 'Kearny/Harrison', state: 'New Jersey', heritage: 'Industrial workers', lat: 40.7464, lng: -74.1554 },
+            { name: 'Fairlawn Rovers', city: 'Fairlawn', state: 'Rhode Island', heritage: 'Unknown', lat: 41.7234, lng: -71.4456 },
+            { name: 'Fall River Rovers', city: 'Fall River', state: 'Massachusetts', heritage: 'Textile workers (Lancashire & Glasgow immigrant origins)', lat: 41.7015, lng: -71.1550 },
+            { name: 'Farr Alpaca FC', city: 'Holyoke', state: 'Massachusetts', heritage: 'Alpaca textile manufacturing', lat: 42.2043, lng: -72.6162 },
+            { name: 'Federal Shipyards', city: 'Kearny/Harrison', state: 'New Jersey', heritage: 'Shipyard workers', lat: 40.7464, lng: -74.1554 },
+            { name: 'Firestone FC', city: 'Akron', state: 'Ohio', heritage: 'Tire company workers (Firestone Tire & Rubber)', lat: 41.0814, lng: -81.5190 },
+            { name: 'Fore River FC (Fore River Rovers)', city: 'Quincy', state: 'Massachusetts', heritage: 'Shipyard workers (Fore River Shipyard)', lat: 42.2529, lng: -71.0023 },
+            { name: 'General Electric FC', city: 'Lynn', state: 'Massachusetts', heritage: 'Electrical manufacturing workers (GE plant)', lat: 42.4668, lng: -70.9495 },
+            { name: 'Goodrich FC', city: 'Akron', state: 'Ohio', heritage: 'Tire company workers (B.F. Goodrich)', lat: 41.0814, lng: -81.5190 },
+            { name: 'Goodyear FC', city: 'Akron', state: 'Ohio', heritage: 'Tire company workers (Goodyear Tire & Rubber)', lat: 41.0814, lng: -81.5190 },
+            { name: 'Gray & Davis', city: 'Boston area', state: 'Massachusetts', heritage: 'Automotive/electrical manufacturing', lat: 42.3601, lng: -71.0589 },
+            { name: 'Greyhounds FC', city: 'Cleveland', state: 'Ohio', heritage: 'Unknown', lat: 41.4993, lng: -81.6944 },
+            { name: 'Greystone FC', city: 'Greystone', state: 'Rhode Island', heritage: 'Unknown', lat: 41.6800, lng: -71.5118 },
+            { name: 'H.R. Gieb Trainworks', city: 'Western Pennsylvania', state: 'Pennsylvania', heritage: 'Railroad equipment manufacturing', lat: 40.4406, lng: -79.9959 },
+            { name: 'Hartford S.K.F.', city: 'Hartford', state: 'Connecticut', heritage: 'Possibly SKF bearing company', lat: 41.7658, lng: -72.6734 },
+            { name: 'Harvey FC', city: 'Harvey', state: 'Illinois', heritage: 'Geographic team', lat: 41.6100, lng: -87.6467 },
+            { name: 'Hendee Indians', city: 'Springfield', state: 'Massachusetts', heritage: 'Possibly Hendee Manufacturing (motorcycles)', lat: 42.1015, lng: -72.5898 },
+            { name: 'Hibernians FC', city: 'Philadelphia', state: 'Pennsylvania', heritage: 'Irish heritage', lat: 39.9526, lng: -75.1652 },
+            { name: 'I.F.L. FC', city: 'Flint', state: 'Michigan', heritage: 'Unknown', lat: 43.0125, lng: -83.6875 },
+            { name: 'Innisfall FC', city: 'St. Louis', state: 'Missouri', heritage: 'Irish heritage', lat: 38.6270, lng: -90.1994 },
+            { name: 'J & J Dobson', city: 'Philadelphia', state: 'Pennsylvania', heritage: 'Textile manufacturing workers', lat: 39.9526, lng: -75.1652 },
+            { name: 'J & P Coats', city: 'Pawtucket (Lonsdale)', state: 'Rhode Island', heritage: 'Thread manufacturing workers', lat: 41.8787, lng: -71.3826 },
+            { name: 'Kodak Park FC', city: 'Rochester', state: 'New York', heritage: 'Eastman Kodak Company employees', lat: 43.1566, lng: -77.6088 },
+            { name: 'Lynn Gas & Electric', city: 'Lynn', state: 'Massachusetts', heritage: 'Gas & electric utility workers', lat: 42.4668, lng: -70.9495 },
+            { name: 'Madison FC', city: 'Madison', state: 'Pennsylvania', heritage: 'Unknown', lat: 40.2465, lng: -79.6800 },
+            { name: 'Magyar AAFC', city: 'Detroit', state: 'Michigan', heritage: 'Hungarian heritage ("Magyar" = Hungarian)', lat: 42.3314, lng: -83.0458 },
+            { name: 'Maple Leaf FC', city: 'Quincy', state: 'Massachusetts', heritage: 'Possibly Canadian connection', lat: 42.2529, lng: -71.0023 },
+            { name: 'McNaughton Rangers', city: 'Rochester', state: 'New York', heritage: 'Unknown', lat: 43.1566, lng: -77.6088 },
+            { name: 'New Departure FC', city: 'Bristol', state: 'Connecticut', heritage: 'Ball bearing and bicycle parts manufacturing', lat: 41.6718, lng: -72.9493 },
+            { name: 'New York FC', city: 'New York City', state: 'New York', heritage: 'Geographic team, NAFBL member', lat: 40.7128, lng: -74.0060 },
+            { name: 'North End FC', city: 'Bethlehem', state: 'Pennsylvania', heritage: 'Unknown', lat: 40.6259, lng: -75.3705 },
+            { name: 'Norwegian American AA', city: 'Chicago', state: 'Illinois', heritage: 'Norwegian heritage', lat: 41.8781, lng: -87.6298 },
+            { name: 'One and All FC', city: 'Detroit', state: 'Michigan', heritage: 'Unknown', lat: 42.3314, lng: -83.0458 },
+            { name: 'Oneida Community Co FC', city: 'Oneida', state: 'New York', heritage: 'Unknown', lat: 43.0926, lng: -75.6513 },
+            { name: 'Paterson FC', city: 'Paterson', state: 'New Jersey', heritage: 'Industrial workers', lat: 40.9168, lng: -74.1718 },
+            { name: 'Pontiac City', city: 'Pontiac', state: 'Michigan', heritage: 'Geographic team', lat: 42.6369, lng: -83.2910 },
+            { name: 'Potter & Johnson', city: 'Pawtucket', state: 'Rhode Island', heritage: 'Manufacturing company', lat: 41.8787, lng: -71.3826 },
+            { name: 'Pullman FC', city: 'Pullman', state: 'Illinois', heritage: 'Pullman Company workers (railroad cars)', lat: 41.6903, lng: -87.6084 },
+            { name: 'Rangers FC', city: 'Chicago', state: 'Illinois', heritage: 'Possibly Scottish heritage', lat: 41.8781, lng: -87.6298 },
+            { name: 'Robins Dry Dock', city: 'Brooklyn (Red Hook)', state: 'New York', heritage: 'Shipyard workers (Todd Shipyards)', lat: 40.6759, lng: -74.0098 },
+            { name: 'Rochester Celtic FC', city: 'Rochester', state: 'New York', heritage: 'Irish/Scottish heritage', lat: 43.1566, lng: -77.6088 },
+            { name: 'Rochester City Moose FC', city: 'Rochester', state: 'New York', heritage: 'Moose Lodge fraternal organization', lat: 43.1566, lng: -77.6088 },
+            { name: 'Roses FC', city: 'Detroit', state: 'Michigan', heritage: 'Unknown', lat: 42.3314, lng: -83.0458 },
+            { name: 'Saylesville FC', city: 'Saylesville', state: 'Rhode Island', heritage: 'Sayles Finishing Plant textile company workers', lat: 41.8968, lng: -71.4078 },
+            { name: 'Scullin Steel', city: 'St. Louis', state: 'Missouri', heritage: 'Steel workers', lat: 38.6270, lng: -90.1994 },
+            { name: 'Simco FC', city: 'Kenosha', state: 'Wisconsin', heritage: 'Simmons Bedding Company employees', lat: 42.5847, lng: -87.8212 },
+            { name: 'Smith & Dove FC', city: 'Andover', state: 'Massachusetts', heritage: 'Manufacturing company which spun flax into thread and twine for products such as shoes, sail cloth and carpets in mills', lat: 42.6583, lng: -71.1373 },
+            { name: 'Solvay FC', city: 'Detroit', state: 'Michigan', heritage: 'Chemical company workers (Solvay Process)', lat: 42.3314, lng: -83.0458 },
+            { name: 'Sprague FC', city: 'Bloomfield', state: 'New Jersey', heritage: 'Employees of Sprague Electric Company', lat: 40.8068, lng: -74.1854 },
+            { name: 'St. Louis Screw FC', city: 'St. Louis', state: 'Missouri', heritage: 'Screw manufacturing (disqualified for ineligible players)', lat: 38.6270, lng: -90.1994 },
+            { name: 'St. Michael\'s FC', city: 'Fall River', state: 'Massachusetts', heritage: 'Possibly Irish heritage (Catholic parish)', lat: 41.7015, lng: -71.1550 },
+            { name: 'Stamford FC', city: 'Stamford', state: 'Connecticut', heritage: 'Geographic team', lat: 41.0534, lng: -73.5387 },
+            { name: 'Swedish American AA', city: 'Chicago', state: 'Illinois', heritage: 'Swedish heritage', lat: 41.8781, lng: -87.6298 },
+            { name: 'Tebo Yacht Basin', city: 'Brooklyn (3rd ave and 23rd st)', state: 'New York', heritage: 'Shipyard workers (Todd Shipyards subsidiary)', lat: 40.6582, lng: -73.9842 },
+            { name: 'Thistles FC', city: 'Chicago', state: 'Illinois', heritage: 'Scottish heritage (thistle = Scottish symbol)', lat: 41.8781, lng: -87.6298 },
+            { name: 'Trimo FC', city: 'Roxbury', state: 'Massachusetts', heritage: 'Possibly company team of Trimont Manufacturing', lat: 42.3295, lng: -71.0836 },
+            { name: 'Ulster FC', city: 'Detroit', state: 'Michigan', heritage: 'Irish heritage (Ulster = Northern Ireland)', lat: 42.3314, lng: -83.0458 },
+            { name: 'United Shoe FC', city: 'Beverley', state: 'Massachusetts', heritage: 'Shoe manufacturing workers', lat: 42.5484, lng: -70.8800 },
+            { name: 'Walkerville FC', city: 'Detroit', state: 'Michigan', heritage: 'Geographic area', lat: 42.3314, lng: -83.0458 },
+            { name: 'White Motor Co FC', city: 'Cleveland', state: 'Ohio', heritage: 'White Motor Company workers (truck manufacturing)', lat: 41.4993, lng: -81.6944 },
+            { name: 'Wolfenden Shore FC', city: 'Philadelphia', state: 'Pennsylvania', heritage: 'Textile company', lat: 39.9526, lng: -75.1652 },
+            { name: 'Young Thornton FC', city: 'Thornton', state: 'Rhode Island', heritage: 'Unknown', lat: 41.6800, lng: -71.5118 }
+        ];
+        
+        // Create icon for markers
+        const teamIcon = L.divIcon({
+            className: 'team-icon',
+            html: '<div style="font-size: 16px; line-height: 1; text-align: center; color: #1a5490;"><i class="fas fa-futbol"></i></div>',
+            iconSize: [20, 20],
+            iconAnchor: [10, 10]
+        });
+        
+        // Create marker cluster group
+        const markers = L.markerClusterGroup();
+        
+        // Add markers for each team to the cluster group
+        teams.forEach(team => {
+            const popupContent = `
+                <div class="team-popup">
+                    <h3>${team.name}</h3>
+                    <p><strong>Location:</strong> ${team.city}, ${team.state}</p>
+                    <p><strong>Heritage/Industry:</strong> ${team.heritage}</p>
+                </div>
+            `;
+            
+            const marker = L.marker([team.lat, team.lng], {
+                icon: teamIcon
+            }).bindPopup(popupContent);
+            
+            markers.addLayer(marker);
+        });
+        
+        // Add the cluster group to the map
+        map.addLayer(markers);
+    </script>
+</body>
+</html>

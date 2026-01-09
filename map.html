@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>USA and Western Europe Map</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        #map {
+            height: 100vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script>
+        // Initialize map centered to show both USA and Western Europe
+        const map = L.map('map').setView([50, -20], 3);
+        
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+        
+        // Base size for weight 1 (in pixels)
+        const baseSize = 20;
+        
+        // Locations with their coordinates and weights
+        const locations = [
+            {
+                name: 'Sweden',
+                lat: 60.1282,
+                lng: 18.6435,
+                weight: 1
+            },
+            {
+                name: 'St. Louis',
+                lat: 38.6270,
+                lng: -90.1994,
+                weight: 1
+            },
+            {
+                name: 'Scotland',
+                lat: 56.4907,
+                lng: -4.2026,
+                weight: 9
+            },
+            {
+                name: 'England',
+                lat: 52.3555,
+                lng: -1.1743,
+                weight: 1
+            },
+            {
+                name: 'New York',
+                lat: 40.7128,
+                lng: -74.0060,
+                weight: 1
+            }
+        ];
+        
+        // Add weighted soccer ball markers
+        locations.forEach(location => {
+            // Use square root scaling so weight 9 is 3x larger, not 9x
+            const size = baseSize * Math.sqrt(location.weight);
+            
+            const soccerBallIcon = L.divIcon({
+                className: 'soccer-ball-icon',
+                html: `<div style="font-size: ${size}px; line-height: 1; text-align: center; color: #1a5490;"><i class="fas fa-futbol"></i></div>`,
+                iconSize: [size, size],
+                iconAnchor: [size / 2, size / 2]
+            });
+            
+            L.marker([location.lat, location.lng], {
+                icon: soccerBallIcon
+            }).addTo(map)
+            .bindPopup(`${location.name} (weight: ${location.weight})`);
+        });
+    </script>
+</body>
+</html>
